@@ -1,0 +1,41 @@
+{
+  "bookings": [
+    {
+      "firstname": "Ayesha",
+      "lastname": "K",
+      "totalprice": 111,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2025-09-01",
+        "checkout": "2025-09-10"
+      },
+      "additionalneeds": "Breakfast"
+    },
+    {
+      "firstname": "DevOps",
+      "lastname": "Engineer",
+      "totalprice": 222,
+      "depositpaid": false,
+      "bookingdates": {
+        "checkin": "2025-10-05",
+        "checkout": "2025-10-12"
+      },
+      "additionalneeds": "Late checkout"
+    }
+  ],
+  "update_payload": {
+    "firstname": "Updated",
+    "lastname": "User",
+    "totalprice": 333,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2025-11-01",
+      "checkout": "2025-11-05"
+    },
+    "additionalneeds": "Lunch"
+  },
+  "partial_update_payload": {
+    "firstname": "Patched",
+    "additionalneeds": "Snacks"
+  }
+}
