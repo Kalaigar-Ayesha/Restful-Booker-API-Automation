@@ -1,21 +1,19 @@
-````markdown
 # 📚 Bookstore / Restful Booker API Automation (Pytest + Requests)
 
 A **complete API automation testing** framework using **Python, Pytest, Requests, and JSON Schema** with **HTML** and **Allure** reporting.
 
-**Target API:** [Restful Booker](https://restful-booker.herokuapp.com/) (public demo API)
+**Target API:** [Restful Booker](https://restful-booker.herokuapp.com/) (public demo API).  
 
 ---
 
 ## 🔑 API Authentication
 
 **Login Endpoint:**
-```http
+```
 POST /auth
-````
+```
 
 **Request Body:**
-
 ```json
 {
   "username": "admin",
@@ -24,16 +22,13 @@ POST /auth
 ```
 
 **Response:**
-
 ```json
-{
-  "token": "..."
-}
+{ "token": "..." }
 ```
 
-For **PUT / PATCH / DELETE** requests, add header:
-
-```http
+For **PUT / PATCH / DELETE** requests:
+Add header:
+```
 Cookie: token=<token>
 ```
 
@@ -43,7 +38,7 @@ Cookie: token=<token>
 
 ## 📂 Project Structure
 
-```plaintext
+```
 api_automation/
   tests/
     test_create_booking.py
@@ -70,10 +65,8 @@ api_automation/
 
 ```bash
 python -m venv .venv
-
 # Activate (Windows)
 .\.venv\Scripts\activate
-
 # Activate (macOS/Linux)
 source .venv/bin/activate
 ```
@@ -111,8 +104,7 @@ pytest -v --html=reports/report.html --self-contained-html
 
 # Allure report
 pytest -v --alluredir=reports/allure-results
-
-# Serve Allure report (if allure CLI is installed)
+# Then (if allure CLI is installed):
 allure serve reports/allure-results
 ```
 
@@ -178,4 +170,3 @@ pytest -v --html=reports/report.html --self-contained-html
 * [Restful Booker API Docs](https://restful-booker.herokuapp.com/apidoc/index.html)
 * [Pytest Documentation](https://docs.pytest.org/en/stable/)
 * [Allure Reports](https://docs.qameta.io/allure/)
-
